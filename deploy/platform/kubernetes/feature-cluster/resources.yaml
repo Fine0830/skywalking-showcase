@@ -163,6 +163,8 @@ spec:
               value: "0"
             - name: SW_TELEMETRY
               value: prometheus
+            - name: SW_ENABLE_ON_DEMAND_POD_LOG
+              value: "true"
           volumeMounts:
             - name: config-volume
               mountPath: /skywalking/ext-config
@@ -253,6 +255,8 @@ spec:
               value: "false"
             - name: SW_SLOW_DB_THRESHOLD
               value: default:0,mongodb:100
+            - name: SW_ENABLE_ON_DEMAND_POD_LOG
+              value: "true"
           volumeMounts:
             - name: config-volume
               mountPath: /skywalking/ext-config
