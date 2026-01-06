@@ -52,7 +52,7 @@ while True:
         traceback.print_exc()
         break
     finally:
-        # Wait a bit on the page
+        # Wait a moment on the page
         time.sleep(5 * 60)
         
         # Close the page (navigate to blank page)
